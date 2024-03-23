@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<title>Surf-D: High-Quality Surface Generation for Arbitrary Topologies using Diffusion Models</title>
+	<title>Surf-D: Generating High-Quality Surfaces of Arbitrary Topologies Using Diffusion Models</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<!-- Meta tags for Zotero grab citation -->
@@ -68,7 +68,7 @@ MathJax.Hub.Config({
 
 
 			<div class="section head">
-				<h1>Surf-D: High-Quality Surface Generation for Arbitrary Topologies using Diffusion Models</h1>
+				<h1>Surf-D: Generating High-Quality Surfaces of Arbitrary Topologies Using Diffusion Models</h1>
 
 				<div class="authors">
 					<a href="https://yzmblog.github.io/" target="_blank">Zhengming Yu</a><sup> 1*</sup>&#160;&#160;
@@ -132,7 +132,7 @@ MathJax.Hub.Config({
 
 				</div>
 				<p>
-					We present <strong>Surf-D</strong>, a novel method for generating high-quality 3D shapes as <strong>Surfaces</strong> with arbitrary topologies using <strong>Diffusion</strong> models. Specifically, we adopt Unsigned Distance Field (UDF) as the surface representation,  as it excels in handling arbitrary topologies, enabling the generation of complex shapes. While the prior methods explored shape generation with different representations, they suffer from limited topologies and geometry details. Moreover, it's non-trivial to directly extend prior diffusion models to UDF because they lack spatial continuity due to the discrete volume structure. However, UDF requires accurate gradients for mesh extraction and learning. To tackle the issues, we first leverage a point-based auto-encoder to learn a compact latent space, which supports gradient querying for any input point through differentiation to effectively capture intricate geometry at a high resolution. Since the learning difficulty for various shapes can differ, a curriculum learning strategy is employed to efficiently embed various surfaces, enhancing the whole embedding process. With pretrained shape latent space, we employ a latent diffusion model to acquire the distribution of various shapes. Our approach demonstrates superior performance in shape generation across multiple modalities and conducts extensive experiments in unconditional generation, category conditional generation, 3D reconstruction from images, and text-to-shape tasks.
+					We present <strong>Surf-D</strong>, a novel method for generating high-quality 3D shapes as <strong>Surfaces</strong> with arbitrary topologies using <strong>Diffusion</strong> models. Previous methods explored shape generation with different representations and they suffer from limited topologies and poor geometry details. To generate high-quality surfaces of arbitrary topologies, we use the Unsigned Distance Field (UDF) as our surface representation to accommodate arbitrary topologies. Furthermore, we propose a new pipeline that employs a point-based AutoEncoder to learn a compact and continuous latent space for accurately encoding UDF and support high-resolution mesh extraction. We further show that our new pipeline significantly outperforms the prior approaches to learning the distance fields, such as the grid-based AutoEncoder, which is not scalable and incapable of learning accurate UDF. In addition, we adopt a curriculum learning strategy to efficiently embed various surfaces. With the pretrained shape latent space, we employ a latent diffusion model to acquire the distribution of various shapes. Extensive experiments are presented on using Surf-D for unconditional generation, category conditional generation, image conditional generation, and text-to-shape tasks. The experiments demonstrate the superior performance of Surf-D in shape generation across multiple modalities as conditions.
 				</p>
 			</div>
 			<br>
@@ -192,7 +192,7 @@ MathJax.Hub.Config({
 				<center>
 					<div class="row" style="margin-bottom:5px">
 					<div class="col" style="text-align:center">
-						<img class="thumbnail" src="figs/fig_sketch2shape.png" style="width:100%; margin-bottom:20px">
+						<img class="thumbnail" src="figs/fig_sketch2shape.gif" style="width:100%; margin-bottom:20px">
 					</div>
 					<p>Under the sketch images condition, <strong>Surf-D</strong> generates higher quality and detailed results aligned with input sketch with arbitrary topology.</p>
 					</div>
@@ -218,7 +218,7 @@ MathJax.Hub.Config({
 				<center>
 					<div class="row" style="margin-bottom:5px">
 					<div class="col" style="text-align:center">
-						<img class="thumbnail" src="figs/fig_pix3d.png" style="width:100%; margin-bottom:20px">
+						<img class="thumbnail" src="figs/fig_pix3d.gif" style="width:100%; margin-bottom:20px">
 					</div>
 						<p>Given single-view images of objects, <strong>Surf-D</strong> can produce high-quality results faithfully aligned with input images.
 						</p>
@@ -232,7 +232,7 @@ MathJax.Hub.Config({
 				<center>
 					<div class="row" style="margin-bottom:5px">
 					<div class="col" style="text-align:center">
-						<img class="thumbnail" src="figs/fig_text2shape.png" style="width:60%; margin-bottom:20px">
+						<img class="thumbnail" src="figs/fig_text2shape.gif" style="width:100%; margin-bottom:20px">
 					</div>
 						<p>Give the text description of objects, <strong>Surf-D</strong> produces high-quality results aligned with input texts.
 						</p>
