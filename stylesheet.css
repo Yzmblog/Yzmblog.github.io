@@ -1,136 +1,454 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+/* -----------------------------
+   Base + Theme
+------------------------------ */
+:root{
+  --bg: #ffffff;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --link: #2563eb;
+  --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --radius: 18px;
 }
 
-a {
-  color: #1772d0;
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #0b1220;
+    --card: #0f172a;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #1f2937;
+    --link: #60a5fa;
+    --shadow: 0 18px 36px rgba(0,0,0,.35);
+  }
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  line-height: 1.65;
+}
+
+a{
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover{ text-decoration: underline; }
+
+.container{
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 28px 18px 72px;
+}
+
+/* -----------------------------
+   Sticky Nav
+------------------------------ */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.nav-inner{
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.nav-brand{
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.nav-links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nav-links a{
+  font-size: 14px;
+  color: var(--muted);
+  padding: 7px 10px;
+  border-radius: 12px;
+}
+.nav-links a:hover{
+  color: var(--text);
+  background: color-mix(in srgb, var(--border) 45%, transparent);
   text-decoration: none;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
+/* -----------------------------
+   Hero
+------------------------------ */
+.hero{
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 26px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+@media (max-width: 900px){
+  .hero{
+    grid-template-columns: 1fr;
+  }
+}
+
+.name{
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px;
+}
+
+.tagline{
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.bio{
+  margin: 0 0 14px;
+  color: var(--text);
+}
+
+.callout{
+  margin: 14px 0 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  border-radius: 14px;
+  color: var(--text);
+}
+
+.cta{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 14px;
+  font-size: 14px;
+  color: var(--text);
+  box-shadow: none;
+}
+.btn:hover{
+  box-shadow: var(--shadow);
   text-decoration: none;
 }
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+.btn.primary{
+  background: color-mix(in srgb, var(--link) 12%, var(--card));
+  border-color: color-mix(in srgb, var(--link) 30%, var(--border));
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+/* -----------------------------
+   Sections + Cards
+------------------------------ */
+.divider{
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 26px 0;
+}
+
+.section-head{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 0 14px;
+}
+.section h2{
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.cards{
+  display: grid;
+  gap: 14px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+@media (max-width: 760px){
+  .card{
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-media{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--border) 25%, transparent);
+}
+
+.card-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+.card-media.logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 18px;
+}
+.card-media.logo img{
+  width: min(180px, 80%);
+  height: auto;
+  object-fit: contain;
+}
+
+.card-body{ padding: 2px 2px 4px; }
+
+.card-top{
+  display:flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card-title{
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.badge{
+  font-size: 12px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+.authors{
+  margin: 8px 0 10px;
+  color: var(--muted);
   font-size: 14px;
 }
 
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+.desc{
+  margin: 8px 0 10px;
+  color: var(--text);
 }
 
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+.links{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  color: var(--text);
+  font-size: 13px;
+}
+.chip:hover{
+  text-decoration: none;
+  box-shadow: var(--shadow);
 }
 
-.one {
-  width: 160px;
-  height: 160px;
+.chip.disabled{
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.stars{
+  height: 20px;
+}
+
+/* Hover video effect (MonoHuman) */
+.video-wrap{
   position: relative;
 }
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.video-overlay{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition: opacity 0.2s ease;
+}
+.video-overlay video{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+/* Compact cards for internship */
+.card.compact{
+  grid-template-columns: 160px 1fr;
+}
+@media (max-width: 760px){
+  .card.compact{ grid-template-columns: 1fr; }
 }
 
-span.highlight {
-  background-color: #ffffd0;
+/* -----------------------------
+   Lists + Footer
+------------------------------ */
+.list{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text);
+}
+.list li{ margin: 8px 0; }
+
+.list li{
+  font-size: 18px;     /* try 16–18px */
+  line-height: 1.6;
 }
 
-p{
-  margin: 8px auto;
-  font-size: 14px;
+.footer{
+  margin-top: 34px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: right;
 }
+
+/* -----------------------------
+   HERO RIGHT: 3D model card (default visible, no portrait)
+   This preserves the original two-column hero layout.
+------------------------------ */
+.hero-photo.hero-3d-card{
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: var(--card);
+  display: grid;
+  /* grid-template-rows: auto 1fr; */
+  grid-template-rows: 1fr;
+  min-height: 420px; /* keeps the right column visually balanced */
+}
+
+@media (max-width: 900px){
+  .hero-photo.hero-3d-card{
+    min-height: 380px;
+  }
+}
+
+/* Header bar */
+.photo-3d-top{
+  display:flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.photo-3d-title{
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.photo-3d-sub{
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Stage area holds model-viewer */
+.photo-3d-stage{
+  position: relative;
+  min-height: 0; /* important for CSS grid children to size correctly */
+}
+
+/* model-viewer must have explicit height */
+#mvInline{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+}
+
+.card-video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Keep bullets/indent */
+.list.list-split{
+  padding-left: 18px;      /* keep your original indent */
+  list-style-position: outside;
+}
+
+.list.list-split li{
+  margin: 8px 0;           /* keep your original spacing */
+}
+
+/* Two-column layout inside each li */
+.list.list-split .row{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.list.list-split .item-main{
+  flex: 1;
+  min-width: 0;
+}
+
+.list.list-split .item-time{
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+/* Mobile: stack */
+@media (max-width: 520px){
+  .list.list-split .row{
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+

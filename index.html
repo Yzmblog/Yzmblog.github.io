@@ -1,177 +1,281 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- model-viewer web component -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
+  <meta charset="UTF-8" />
   <title>Zhengming Yu</title>
-  
-  <meta name="author" content="Zhengming Yu">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Zhengming Yu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-site-verification" content="EpBHWgfBN0BZY1dcvdd2p81TKcn9_W1rW9o4r8Ysm4E" />
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!--<link rel="icon" type="image/png" href="images/seal_icon.png">-->
+
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Zhengming Yu</name>
-              </p>
-              <p>I am a second-year CS Ph.D. student in <a href="https://aggie.graphics/">Aggie Graphics Group</a> of <a href="https://www.tamu.edu/">Texas A&M University</a>, supervised by <a href="https://scholar.google.com/citations?user=28shvv0AAAAJ&hl=en">Prof. Wenping Wang</a> and <a href="https://people.tamu.edu/~xinli/">Prof. Xin Li</a>. I received my bachelor degree from <a href="https://www.scut.edu.cn/en/">South China University of Technology(SCUT)</a>. My research interests include 3D vision, computer graphics and generative model. I spent a wonderful summer at NVIDIA, working with <a href="https://tianyeli.github.io/">Tianye Li</a>, <a href="https://luminohope.org/">Koki Nagano</a>, and <a href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>.
-              <p>
-                <strong>I am always open to discussing with different people. Feel free to drop me an email if you are interested! :)</strong>
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:yuhuaijin36@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="https://github.com/Yzmblog">Github</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=_3niqcwAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/zhengming-yu-99111b207/">Linkedin</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:26%;max-width:26%">
-              <a href="images/Zhengming.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Zhengming.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research & Project</heading>
-              <!--<p>-->
-                <!--I'm interested in intersection of Computer Vision and Computer Graphics, generative model, -->
-              <!--</p>-->
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <!-- Sticky Nav -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Zhengming Yu</a>
+      <nav class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#internship">Internship</a>
+        <a href="#awards">Awards</a>
+        <a href="#misc">Misc</a>
+        <!-- <a href="#contact">Contact</a> -->
+      </nav>
+    </div>
+  </header>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/Sig25_GAIA.png' width="160" style="padding-top: 0px; padding-bottom: 0px;">
-              </div>
-              <script type="text/javascript">
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>GAIA:Generative Animatable Interactive Avatars with Expression-conditioned Gaussians</papertitle>
-                <!-- <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Yzmblog/SurfD?style=social"> -->
-              <!--</a>-->
-              <br>
+  <main class="container" id="top">
+    <!-- Hero -->
+    <section class="hero" aria-label="Intro">
+      <div class="hero-text">
+        <h1 class="name">Zhengming Yu</h1>
+        <p class="tagline">
+          CS Ph.D. student @ Texas A&amp;M • Video Generation / Digital Human / 3D Vision
+        </p>
+
+        <p class="bio">
+          I am a third-year CS Ph.D. student in
+          <a href="https://aggie.graphics/">Aggie Graphics Group</a> of
+          <a href="https://www.tamu.edu/">Texas A&amp;M University</a>,
+          supervised by
+          <a href="https://scholar.google.com/citations?user=28shvv0AAAAJ&hl=en">Prof. Wenping Wang</a>
+          and
+          <a href="https://people.tamu.edu/~xinli/">Prof. Xin Li</a>.
+          I received my bachelor degree from
+          <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT)</a>.
+          My research interests include Video Generation, Digital Human, and 3D Vision & Graphics.<br><br>
+          I spent several wonderful summers interning in industry. In summer 2024, I was a research intern at <a href="https://www.nvidia.com/en-us/">NVIDIA</a>, working with
+          <a href="https://tianyeli.github.io/">Tianye Li</a>,
+          <a href="https://luminohope.org/">Koki Nagano</a>,
+          and
+          <a href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>.<br>
+          In summer 2025, I was a research intern at <a href="https://www.eyelinestudios.com/en">Eyeline Labs (powered by Netflix)</a>, working with
+          <a href="https://limacv.github.io/homepage/">Li Ma</a>,
+          <a href="https://mingminghe.com/">Mingming He</a>,
+          and
+          <a href="https://www.pauldebevec.com/">Paul Debevec</a>.
+        </p>
+
+        <p class="callout">
+          <strong>I am always open to discussing with different people. Feel free to drop me an email if you are interested! :)</strong>
+        </p>
+
+        <div class="cta" id="contact">
+          <a class="btn" href="mailto:yuhuaijin36@gmail.com">Email</a>
+          <a class="btn" href="https://github.com/Yzmblog">GitHub</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=_3niqcwAAAAJ&hl=zh-CN">Scholar</a>
+          <a class="btn" href="https://www.linkedin.com/in/zhengming-yu-99111b207/">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Hero right card: 3D model visible by default (no portrait, no modal, no toggle) -->
+      <div class="hero-photo hero-3d-card" aria-label="3D model viewer">
+        <!-- <div class="photo-3d-top">
+          <span class="photo-3d-title">3D Model</span>
+          <span class="photo-3d-sub">Drag to rotate • Scroll/Pinch to zoom • Right click to pan</span>
+        </div> -->
+
+        <div class="photo-3d-stage">
+          <model-viewer
+            id="mvInline"
+            src="./model/zhengming.glb"
+            alt="3D model of Zhengming Yu"
+            camera-controls
+            auto-rotate
+            rotation-per-second="15deg"
+            shadow-intensity="0.8"
+            exposure="1.0"
+            loading="eager"
+            interaction-prompt="none"
+          ></model-viewer>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Research -->
+    <section class="section" id="research">
+      <div class="section-head">
+        <h2>
+          Selected Research &amp; Projects
+          <a class="section-link" href="https://scholar.google.com/citations?user=_3niqcwAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">
+            [ Full List ]
+          </a>
+        </h2>      </div>
+
+      <div class="cards">
+
+        <!-- Video Gen -->
+        <!-- <article class="card">
+          <div class="card-media">
+            <video class="card-video" muted autoplay loop playsinline preload="metadata">
+              <source src="images/26_video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Video Generation Model for Movie Production</h3>
+              <span class="badge">Ongoing Project</span>
+            </div> -->
+
+            <!-- <p class="authors"> -->
+              <!-- <strong>Zhengming Yu</strong>,
+              <a href="https://tianyeli.github.io/" target="_blank" rel="noreferrer">Tianye Li</a>,
+              <a href="https://mrtornado24.github.io/" target="_blank" rel="noreferrer">Jingxiang Sun</a>,
+              <a href="https://omershapira.com/about-me/" target="_blank" rel="noreferrer">Omer Shapira</a>,
+              <a href="https://swook.net/" target="_blank" rel="noreferrer">Seonwook Park</a>,
+              <a href="https://scholar.google.de/citations?user=9_GCtwUAAAAJ&hl=de" target="_blank" rel="noreferrer">Michael Stengel</a>,
+              <a href="https://matthew-a-chan.github.io/website/about/about.html" target="_blank" rel="noreferrer">Matthew Chan</a>,
+              <a href="https://people.tamu.edu/~xinli/" target="_blank" rel="noreferrer">Xin Li</a>,
+              <a href="https://scholar.google.com/citations?user=28shvv0AAAAJ" target="_blank" rel="noreferrer">Wenping Wang</a>,
+              <a href="https://luminohope.org/" target="_blank" rel="noreferrer">Koki Nagano</a>,
+              <a href="https://research.nvidia.com/person/shalini-de-mello" target="_blank" rel="noreferrer">Shalini De Mello</a> -->
+            <!-- </p> -->
+
+            <!-- <p class="desc">Training Video Generation Model for Movie Production.</p>
+
+            <div class="links">
+              <span class="chip disabled" aria-disabled="true">Paper</span>
+              <span class="chip disabled" aria-disabled="true">Project</span>
+              <span class="chip disabled" aria-disabled="true">Code</span>
+            </div>
+          </div>
+        </article> -->
+
+
+
+        <!-- GAIA -->
+        <article class="card">
+          <div class="card-media">
+            <video class="card-video" muted autoplay loop playsinline preload="metadata">
+              <source src="images/25_GAIA.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">GAIA: Generative Animatable Interactive Avatars with Expression-conditioned Gaussians</h3>
+              <span class="badge">SIGGRAPH 2025</span>
+            </div>
+
+            <p class="authors">
               <strong>Zhengming Yu</strong>,
-              <a href="https://tianyeli.github.io/" target="_blank">Tianye Li</a>,
-              <a href="https://mrtornado24.github.io/" target="_blank">Jingxiang Sun</a>,
-              <a href="https://omershapira.com/about-me/" target="_blank">Omer Shapira</a>,
-              <a href="https://swook.net/" target="_blank">Seonwook Park</a>,
-              <a href="https://scholar.google.de/citations?user=9_GCtwUAAAAJ&hl=de" target="_blank">Michael Stengel</a>,
-              <a href="https://matthew-a-chan.github.io/website/about/about.html" target="_blank">Matthew Chan</a>,
-              <a href="https://people.tamu.edu/~xinli/" target="_blank">Xin Li</a>,
-              <a href="https://scholar.google.com/citations?user=28shvv0AAAAJ" target="_blank">Wenping Wang</a>,
-              <a href="https://luminohope.org/" target="_blank">Koki Nagano</a>,
-              <a href="https://research.nvidia.com/person/shalini-de-mello" target="_blank">Shalini De Mello</a>
-              <br>
-              <em><strong>SIGGRAPH</strong>, 2025.</em>
-              <br>
-              <a href="https://dl.acm.org/doi/10.1145/3721238.3730737">Paper</a> / 
-              <a href="https://research.nvidia.com/labs/amri/projects/gaia/">Project</a> / 
-              <a href="">Code(Coming Soon)</a>
-              <p></p>
-              <p>
-                Generative Animatable 3D Head Avatars Learned from 2D In-the-Wild Images.
-              </p>
-            </td>
-          </tr>
+              <a href="https://tianyeli.github.io/" target="_blank" rel="noreferrer">Tianye Li</a>,
+              <a href="https://mrtornado24.github.io/" target="_blank" rel="noreferrer">Jingxiang Sun</a>,
+              <a href="https://omershapira.com/about-me/" target="_blank" rel="noreferrer">Omer Shapira</a>,
+              <a href="https://swook.net/" target="_blank" rel="noreferrer">Seonwook Park</a>,
+              <a href="https://scholar.google.de/citations?user=9_GCtwUAAAAJ&hl=de" target="_blank" rel="noreferrer">Michael Stengel</a>,
+              <a href="https://matthew-a-chan.github.io/website/about/about.html" target="_blank" rel="noreferrer">Matthew Chan</a>,
+              <a href="https://people.tamu.edu/~xinli/" target="_blank" rel="noreferrer">Xin Li</a>,
+              <a href="https://scholar.google.com/citations?user=28shvv0AAAAJ" target="_blank" rel="noreferrer">Wenping Wang</a>,
+              <a href="https://luminohope.org/" target="_blank" rel="noreferrer">Koki Nagano</a>,
+              <a href="https://research.nvidia.com/person/shalini-de-mello" target="_blank" rel="noreferrer">Shalini De Mello</a>
+            </p>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/23_SurfD.png' width="160" style="padding-top: 20px; padding-bottom: 20px;">
-              </div>
-              <script type="text/javascript">
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>Surf-D: Generating High-Quality Surfaces of Arbitrary Topologies Using Diffusion Models</papertitle> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Yzmblog/SurfD?style=social">
-              <!--</a>-->
-              <br>
+            <p class="desc">Generative animatable 3D head avatars learned from 2D in-the-wild images.</p>
+
+            <div class="links">
+              <a class="chip" href="https://dl.acm.org/doi/10.1145/3721238.3730737">Paper</a>
+              <a class="chip" href="https://research.nvidia.com/labs/amri/projects/gaia/">Project</a>
+              <span class="chip disabled" aria-disabled="true">Code (Coming soon)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Surf-D -->
+        <article class="card">
+          <!-- <div class="card-media">
+            <img src="images/23_SurfD.png" alt="Surf-D teaser image" />
+          </div> -->
+          <div class="card-media">
+            <img src="images/fig_cat_conditional.gif" alt="Surf-D category conditional generation" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Surf-D: Generating High-Quality Surfaces of Arbitrary Topologies Using Diffusion Models</h3>
+              <span class="badge">ECCV 2024</span>
+            </div>
+
+            <p class="authors">
               <strong>Zhengming Yu*</strong>,
-              <a href="https://frank-zy-dou.github.io/" target="_blank">Zhiyang Dou*</a>,
-              <a href="https://www.xxlong.site/" target="_blank">Xiaoxiao Long</a>,
-              <a href="https://clinplayer.github.io/" target="_blank">Cheng Lin</a>,
-              <a href="https://kunkun0w0.github.io/" target="_blank">Zekun Li</a>,
-              <a href="https://liuyuan-pal.github.io/" target="_blank">Yuan Liu</a>,
-              <a href="https://niessnerlab.org/members/norman_mueller/profile.html" target="_blank">Norman M&uuml;ller</a>,
-              <a href="https://i.cs.hku.hk/~taku/">Taku Komura</a>,
-              <a href="https://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a>,
-              <a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>,
-              <a href="https://people.tamu.edu/~xinli/" target="_blank">Xin Li</a>,
-              <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html">Wenping Wang</a>
-              <br>
-              <em>European Conference on Computer Vision (<strong>ECCV</strong>), 2024.</em>
-              <br>
-              <a href="https://arxiv.org/abs/2311.17050">Paper</a> / 
-              <a href="https://yzmblog.github.io/projects/SurfD/">Project</a> / 
-              <a href="https://github.com/Yzmblog/SurfD">Code</a>
-              <p></p>
-              <p>
-                A novel method for high-quality surface generation for arbitrary topologies using diffusion model.
-              </p>
-            </td>
-          </tr>
+              <a href="https://frank-zy-dou.github.io/" target="_blank" rel="noreferrer">Zhiyang Dou*</a>,
+              <a href="https://www.xxlong.site/" target="_blank" rel="noreferrer">Xiaoxiao Long</a>,
+              <a href="https://clinplayer.github.io/" target="_blank" rel="noreferrer">Cheng Lin</a>,
+              <a href="https://kunkun0w0.github.io/" target="_blank" rel="noreferrer">Zekun Li</a>,
+              <a href="https://liuyuan-pal.github.io/" target="_blank" rel="noreferrer">Yuan Liu</a>,
+              <a href="https://niessnerlab.org/members/norman_mueller/profile.html" target="_blank" rel="noreferrer">Norman M&uuml;ller</a>,
+              <a href="https://i.cs.hku.hk/~taku/" target="_blank" rel="noreferrer">Taku Komura</a>,
+              <a href="https://people.mpi-inf.mpg.de/~mhaberma/" target="_blank" rel="noreferrer">Marc Habermann</a>,
+              <a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank" rel="noreferrer">Christian Theobalt</a>,
+              <a href="https://people.tamu.edu/~xinli/" target="_blank" rel="noreferrer">Xin Li</a>,
+              <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html" target="_blank" rel="noreferrer">Wenping Wang</a>
+            </p>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/24_dice.png' width="160" style="padding-top: 20px; padding-bottom: 20px;">
-              </div>
-              <script type="text/javascript">
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>DICE: End-to-end Deformation Capture of Hand-Face Interactions from a Single Image</papertitle> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Qingxuan-Wu/DICE?style=social">
-              <br>
-              <a href="https://www.linkedin.com/in/qingxuan-wu/" target="_blank">Qingxuan Wu</a>,
-              <a href="https://frank-zy-dou.github.io/" target="_blank">Zhiyang Dou<sup>#</sup></a>,
-              <a href="https://sirui-xu.github.io/" target="_blank">Sirui Xu</a>,
-              <a href="https://soshishimada.github.io/" target="_blank">Soshi Shimada</a>,
-              <a href="https://cwchenwang.github.io/" target="_blank">Chen Wang</a>,
+            <p class="desc">High-quality surface generation for arbitrary topologies using diffusion models.</p>
+
+            <div class="links">
+              <a class="chip" href="https://arxiv.org/abs/2311.17050">Paper</a>
+              <a class="chip" href="https://yzmblog.github.io/projects/SurfD/">Project</a>
+              <a class="chip" href="https://github.com/Yzmblog/SurfD">Code</a>
+              <img class="stars" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Yzmblog/SurfD?style=social">
+            </div>
+          </div>
+        </article>
+
+        <!-- DICE -->
+        <!-- <article class="card">
+          <div class="card-media">
+            <img src="images/24_dice.png" alt="DICE teaser image" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">DICE: End-to-end Deformation Capture of Hand-Face Interactions from a Single Image</h3>
+              <span class="badge">ICLR 2025</span>
+            </div>
+
+            <p class="authors">
+              <a href="https://www.linkedin.com/in/qingxuan-wu/" target="_blank" rel="noreferrer">Qingxuan Wu</a>,
+              <a href="https://frank-zy-dou.github.io/" target="_blank" rel="noreferrer">Zhiyang Dou<sup>#</sup></a>,
+              <a href="https://sirui-xu.github.io/" target="_blank" rel="noreferrer">Sirui Xu</a>,
+              <a href="https://soshishimada.github.io/" target="_blank" rel="noreferrer">Soshi Shimada</a>,
+              <a href="https://cwchenwang.github.io/" target="_blank" rel="noreferrer">Chen Wang</a>,
               <strong>Zhengming Yu</strong>,
-              <a href="https://liuyuan-pal.github.io/" target="_blank">Yuan Liu</a>,
-              <a href="https://clinplayer.github.io/" target="_blank">Cheng Lin</a>,
-              <a href="https://frank-zy-dou.github.io/projects/DICE/index.html" target="_blank">Zeyu Cao</a>,
-              <a href="https://i.cs.hku.hk/~taku/" target="_blank">Taku Komura</a>,
-              <a href="https://people.mpi-inf.mpg.de/~golyanik/" target="_blank">Vladislav Golyanik</a>,
-              <a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>
-              <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html" target="_blank">Wenping Wang</a>,
-              <a href="https://lingjie0206.github.io/" target="_blank">Lingjie Liu<sup>#</sup></a>
-              <br>
-              <em>International Conference on Learning Representations (<strong>ICLR</strong>), 2025.</em>
-              <br>
-              <a href="https://arxiv.org/abs/2406.17988">Paper</a> / 
-              <a href="https://frank-zy-dou.github.io/projects/DICE/index.html">Project</a> / 
-              <a href="https://github.com/Qingxuan-Wu/DICE">Code</a>
-              <p></p>
-            </td>
-          </tr>
+              <a href="https://liuyuan-pal.github.io/" target="_blank" rel="noreferrer">Yuan Liu</a>,
+              <a href="https://clinplayer.github.io/" target="_blank" rel="noreferrer">Cheng Lin</a>,
+              <a href="https://frank-zy-dou.github.io/projects/DICE/index.html" target="_blank" rel="noreferrer">Zeyu Cao</a>,
+              <a href="https://i.cs.hku.hk/~taku/" target="_blank" rel="noreferrer">Taku Komura</a>,
+              <a href="https://people.mpi-inf.mpg.de/~golyanik/" target="_blank" rel="noreferrer">Vladislav Golyanik</a>,
+              <a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank" rel="noreferrer">Christian Theobalt</a>,
+              <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html" target="_blank" rel="noreferrer">Wenping Wang</a>,
+              <a href="https://lingjie0206.github.io/" target="_blank" rel="noreferrer">Lingjie Liu<sup>#</sup></a>
+            </p>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/23_Dist_Human.png' width="160" style="padding-top: 36px; padding-bottom: 0px;">
-              </div>
-              <script type="text/javascript">
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>Disentangled Clothed Avatar Generation from Text Descriptions</papertitle> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/shanemankiw/so-smpl?style=social">
-              <!--</a>-->
-              <br>
+            <div class="links">
+              <a class="chip" href="https://arxiv.org/abs/2406.17988">Paper</a>
+              <a class="chip" href="https://frank-zy-dou.github.io/projects/DICE/index.html">Project</a>
+              <a class="chip" href="https://github.com/Qingxuan-Wu/DICE">Code</a>
+              <img class="stars" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Qingxuan-Wu/DICE?style=social">
+            </div>
+          </div>
+        </article> -->
+
+        <!-- SO-SMPL -->
+        <!-- <article class="card">
+          <div class="card-media">
+            <img src="images/23_Dist_Human.png" alt="SO-SMPL teaser image" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Disentangled Clothed Avatar Generation from Text Descriptions</h3>
+              <span class="badge">ECCV 2024</span>
+            </div>
+
+            <p class="authors">
               <a href="https://shanemankiw.github.io/">Jionghao Wang</a>,
               <a href="https://liuyuan-pal.github.io/">Yuan Liu</a>,
               <a href="https://frank-zy-dou.github.io/">Zhiyang Dou</a>,
@@ -181,262 +285,352 @@
               <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html">Wenping Wang</a>,
               <a href="https://medialab.sjtu.edu.cn/">Rong Xie</a>,
               <a href="https://medialab.sjtu.edu.cn/author/li-song/">Li Song</a>
-              <br>
-              <em>European Conference on Computer Vision (<strong>ECCV</strong>), 2024.</em>
-              <br>
-              <a href="https://arxiv.org/pdf/2312.05295.pdf">Paper</a> / 
-              <a href="https://shanemankiw.github.io/SO-SMPL/">Project</a> / 
-              <a href="https://github.com/shanemankiw/so-smpl">Code</a>
-              <p></p>
-              <p>
-                A novel method for generate clothed human avatar from text descriptions.
-              </p>
-            </td>
-          </tr>  
+            </p>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/2023_dnarendering.gif' width="160">
-              </div>
-              <script type="text/javascript">
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>DNA-Rendering: A Diverse Neural Actor Repository for High-Fidelity Human-centric Rendering</papertitle> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DNA-Rendering/DNA-Rendering?style=social">
-              <!--</a>-->
-              <br>
-              <a href="#">Wei Cheng*</a>,
-              <a href="#">Ruixiang Chen*</a>,
-              <a href="#">Wanqi Yin*</a>,
-              <a href="#">Siming Fan*</a>,
-              <a href="#">Keyu Chen*</a>,
-              <a href="#">Honglin He</a>,
-              <a href="#">Huiwen Luo</a>,
-              <a href="#">Zhongang Cai</a>,
-              <a href="#">Jingbo Wang</a>,
-              <a href="#">Yang Gao</a>,
-              <strong>Zhengming Yu</strong>,
-              <a href="#">Zhengyu Lin</a>,
-              <a href="#">Daxuan Ren</a>,
-              <a href="#">Lei Yang</a>,
-              <a href="#">Ziwei Liu</a>,
-              <a href="#">Chen Change Loy</a>,
-              <a href="#">Chen Qian</a>,
-              <a href="#">Wayne Wu</a>,
-              <a href="#">Dahua Lin</a>,
-              <a href="#">Bo Dai</a>,
-              <a href="#">Kwan-Yee Lin</a>
-              <br>
-              <em>International Conference on Computer Vision (<strong>ICCV</strong>), 2023.</em>
-              <br>
-              <a href="https://arxiv.org/pdf/2307.10173.pdf">Paper</a> / 
-              <a href="https://dna-rendering.github.io/">Project</a> / 
-              <a href="https://github.com/DNA-Rendering/DNA-Rendering">Code</a>
-              <p></p>
-              <p>
-                A Diverse Neural Actor Repository for High-Fidelity Human-centric Rendering.
-              </p>
-            </td>
-          </tr>
-          
-          
-          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='dreamfusion_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/web.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/cvpr23.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function dreamfusion_start() {
-                  document.getElementById('dreamfusion_image').style.opacity = "1";
-                }
+            <p class="desc">Generate clothed human avatars from text descriptions with disentangled control.</p>
 
-                function dreamfusion_stop() {
-                  document.getElementById('dreamfusion_image').style.opacity = "0";
-                }
-                dreamfusion_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>MonoHuman: Animatable Human Neural Field from Monocular Video</papertitle> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/yzmblog/monohuman?style=social">
-              <!--</a>-->
-              <br>
+            <div class="links">
+              <a class="chip" href="https://arxiv.org/pdf/2312.05295.pdf">Paper</a>
+              <a class="chip" href="https://shanemankiw.github.io/SO-SMPL/">Project</a>
+              <a class="chip" href="https://github.com/shanemankiw/so-smpl">Code</a>
+              <img class="stars" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/shanemankiw/so-smpl?style=social">
+            </div>
+          </div>
+        </article> -->
+
+        <!-- MonoHuman -->
+        <article class="card hover-video" onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()">
+          <!-- <div class="card-media video-wrap">
+            <div class="video-overlay" id="dreamfusion_image">
+              <video muted autoplay loop playsinline>
+                <source src="images/web.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <img src="images/cvpr23.png" alt="MonoHuman teaser image" />
+          </div> -->
+
+          <div class="card-media">
+            <video class="card-video" muted autoplay loop playsinline preload="metadata">
+              <source src="images/web.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">MonoHuman: Animatable Human Neural Field from Monocular Video</h3>
+              <span class="badge">CVPR 2023</span>
+            </div>
+
+            <p class="authors">
               <strong>Zhengming Yu</strong>,
-              <a href="https://scholar.google.com/citations?user=OC8eBkYAAAAJ&hl=zh-CN&oi=sra">Wei Cheng</a>,
+              <a href="https://wchengad.github.io/">Wei Cheng</a>,
               <a href="https://alvinliu0.github.io/">Xian Liu</a>,
               <a href="https://wywu.github.io/">Wayne Wu</a>,
               <a href="https://kwanyeelin.github.io/">Kwan-Yee Lin</a>
-              <br>
-              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2023.</em>
-              <br>
-              <a href="https://arxiv.org/pdf/2304.02001.pdf">Paper</a> / 
-              <a href="https://yzmblog.github.io/projects/MonoHuman/">Project</a> / 
-              <a href="https://github.com/Yzmblog/MonoHuman">Code</a>
-              <p></p>
-              <p>
-                A novel method to model digital human body using neural implicit representation to achieve novel view synthesis and animation.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/xrnerf.png' width="160">
-              </div>
-              <script type="text/javascript">
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>OpenXRNeRF</papertitle> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/openxrlab/xrnerf?style=social">
-              <!--</a>-->
-              <br>
-              <em>Open source project</em>, 2022
-              <br>
-              <a href="https://github.com/openxrlab/xrnerf">project page</a>
-              <p></p>
-              <p>
-                Role: main contributor. XRNeRF is an open-source PyTorch-based codebase for Neural Radiance Field (NeRF).
-              </p>
-            </td>
-          </tr>
-
-
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Internship</heading>
-            <!--<p>-->
-              <!--I'm interested in intersection of Computer Vision and Computer Graphics, generative model, -->
-            <!--</p>-->
-          </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/nvidia.png' width="150" style="padding-top: 40px; padding-bottom: 40px;">
-              </div>
-              <script type="text/javascript">
-              </script>
-              <td style="padding:10px;width:75%;vertical-align:middle">
-                <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                  <papertitle>Research Intern, Nvidia</papertitle>
-                <!--</a>-->
-                <br>
-                <em><p style="color: rgb(0, 162, 255);">May 2024 - Aug 2024, California, United States</p></em>
-                <p>
-                  Mentor: <a href="https://tianyeli.github.io/">Tianye Li</a>, <a href="https://luminohope.org/">Koki Nagano</a>, and <a href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>
-                </p>
-              </td>
-            </tr>
-
-          <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <img src='images/idr_cp.png' width="100" style="padding-top: 40px; padding-bottom: 40px;">
-            </div>
-            <script type="text/javascript">
-            </script>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-                <papertitle>Research Intern, Image Derivative Inc.</papertitle>
-              <!--</a>-->
-              <br>
-              <em><p style="color: rgb(0, 162, 255);">Feb 2023 - May 2023, Hangzhou, China</p></em>
-              <p>
-                Expoloring digital human generation and animation. 
-              </p>
-              <p>
-                Mentor: <a href="https://scholar.google.com/citations?user=lTlZV8wAAAAJ&hl=en"> Boyi Jiang</a>, <a href="https://scholar.google.com/citations?user=cxF_-i4AAAAJ&hl=en"> Yudong Guo</a>
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <div class="one">
-              <img src='images/sensetime.png' width="100" style="padding-top: 65px; padding-bottom: 0px;">
-            </div>
-            <script type="text/javascript">
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-            <!--<a href="https://openreview.net/forum?id=AmPeAFzU3a4">-->
-              <papertitle>Research Intern, XR Lab, SenseTime Research.</papertitle>
-            <!--</a>-->
-            <br>
-            <em><p style="color: rgb(0, 162, 255);">Jul 2021 - Nov 2022, Beijing, China</p></em>
-            <p>
-              Expoloring digital human generation and animation. 
-            </p>
-            <p>
-              Mentor: <a href="https://kwanyeelin.github.io/"> Kwan-Yee Lin</a>, <a href="https://wywu.github.io/"> Wayne Wu</a>
             </p>
 
-          </td>
-          </tr>
+            <p class="desc">Model digital humans from monocular video for novel view synthesis and animation.</p>
 
-      </tbody></table>
+            <div class="links">
+              <a class="chip" href="https://arxiv.org/pdf/2304.02001.pdf">Paper</a>
+              <a class="chip" href="https://yzmblog.github.io/projects/MonoHuman/">Project</a>
+              <a class="chip" href="https://github.com/Yzmblog/MonoHuman">Code</a>
+              <img class="stars" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/yzmblog/monohuman?style=social">
+            </div>
+          </div>
+        </article>
+
+        <!-- DNA-Rendering -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/2023_dnarendering.gif" alt="DNA-Rendering teaser gif" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">DNA-Rendering: A Diverse Neural Actor Repository for High-Fidelity Human-centric Rendering</h3>
+              <span class="badge">ICCV 2023</span>
+            </div>
+
+            <p class="authors">
+              <a href="#">Wei Cheng*</a>, <a href="#">Ruixiang Chen*</a>, <a href="#">Wanqi Yin*</a>, <a href="#">Siming Fan*</a>, <a href="#">Keyu Chen*</a>,
+              <a href="#">Honglin He</a>, <a href="#">Huiwen Luo</a>, <a href="#">Zhongang Cai</a>, <a href="#">Jingbo Wang</a>, <a href="#">Yang Gao</a>,
+              <strong>Zhengming Yu</strong>, <a href="#">Zhengyu Lin</a>, <a href="#">Daxuan Ren</a>, <a href="#">Lei Yang</a>, <a href="#">Ziwei Liu</a>,
+              <a href="#">Chen Change Loy</a>, <a href="#">Chen Qian</a>, <a href="#">Wayne Wu</a>, <a href="#">Dahua Lin</a>, <a href="#">Bo Dai</a>, <a href="#">Kwan-Yee Lin</a>
+            </p>
+
+            <p class="desc">A diverse neural actor repository for high-fidelity human-centric rendering.</p>
+
+            <div class="links">
+              <a class="chip" href="https://arxiv.org/pdf/2307.10173.pdf">Paper</a>
+              <a class="chip" href="https://dna-rendering.github.io/">Project</a>
+              <a class="chip" href="https://github.com/DNA-Rendering/DNA-Rendering">Code</a>
+              <img class="stars" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/DNA-Rendering/DNA-Rendering?style=social">
+            </div>
+          </div>
+        </article>
+
+        <!-- OpenXRNeRF -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/xrnerf.png" alt="OpenXRNeRF teaser image" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">OpenXRNeRF</h3>
+              <span class="badge">Open Source Project • 2022</span>
+            </div>
+
+            <p class="desc">
+              Role: main contributor. XRNeRF is an open-source PyTorch-based codebase for Neural Radiance Field (NeRF).
+            </p>
+
+            <div class="links">
+              <a class="chip" href="https://github.com/openxrlab/xrnerf">Code</a>
+              <img class="stars" alt="GitHub Repo stars" src="https://img.shields.io/github/stars/openxrlab/xrnerf?style=social">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Internship -->
+    <section class="section" id="internship">
+      <div class="section-head">
+        <h2>Internship</h2>
+      </div>
+
+      <!-- Eyeline Labs -->
+      <div class="cards">
+        <article class="card compact">
+          <div class="card-media logo">
+            <img src="images/eyelinestudios_logo.jpeg" alt="Eyeline Labs logo" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Research Intern</h3>
+              <span class="badge">May 2025 – Aug 2025 • Los Angeles, US</span>
+            </div>
+            <p class="desc">Eyeline Labs (powered by Netflix).</p>
+            <p class="desc">Working on video generation model for movie production.</p>
+            <p class="desc">
+              Mentor:
+              <a href="https://limacv.github.io/homepage/">Li Ma</a>,
+              <a href="https://mingminghe.com/">Mingming He</a>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
+            </p>
+          </div>
+        </article>
+
+      <!-- NVIDIA -->
+      <div class="cards">
+        <article class="card compact">
+          <div class="card-media logo">
+            <img src="images/nvidia.png" alt="NVIDIA logo" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Research Intern</h3>
+              <span class="badge">May 2024 – Aug 2024 • Santa Clara, US</span>
+            </div>
+            <p class="desc">NVIDIA Research, AMRI Group.</p>
+            <p class="desc">
+              Mentor:
+              <a href="https://tianyeli.github.io/">Tianye Li</a>,
+              <a href="https://luminohope.org/">Koki Nagano</a>,
+              <a href="https://research.nvidia.com/person/shalini-de-mello">Shalini De Mello</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Image Derivative Inc. -->
+        <article class="card compact">
+          <div class="card-media logo">
+            <img src="images/idr_cp.png" alt="Image Derivative Inc. logo" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Research Intern</h3>
+              <span class="badge">Feb 2023 – May 2023 • Hangzhou, China</span>
+            </div>
+            <!-- <p class="desc">Exploring digital human generation and animation.</p> -->
+            <p class="desc">Image Derivative Inc.</p>
+            <p class="desc">
+              Mentor:
+              <a href="https://scholar.google.com/citations?user=lTlZV8wAAAAJ&hl=en">Boyi Jiang</a>,
+              <a href="https://scholar.google.com/citations?user=cxF_-i4AAAAJ&hl=en">Yudong Guo</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- SenseTime Research -->
+        <article class="card compact">
+          <div class="card-media logo">
+            <img src="images/sensetime.png" alt="SenseTime logo" />
+          </div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3 class="card-title">Research Intern</h3>
+              <span class="badge">Jul 2021 – Nov 2022 • Beijing, China</span>
+            </div>
+            <p class="desc">SenseTime Research, XR Lab.</p>
+            <!-- <p class="desc">Exploring digital human generation and animation.</p> -->
+            <p class="desc">
+              Mentor:
+              <a href="https://kwanyeelin.github.io/">Kwan-Yee Lin</a>,
+              <a href="https://wywu.github.io/">Wayne Wu</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Awards -->
+    <section class="section" id="awards">
+      <div class="section-head">
+        <h2>Selected Honors &amp; Awards</h2>
+      </div>
+
+      <ul class="list list-split">
+        <li>
+          <div class="row">
+            <span class="item-main">Alibaba TianChi Competition Top 1.2%.</span>
+            <span class="item-time">2021</span>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <span class="item-main">National Scholarship.</span>
+            <span class="item-time">2020</span>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <span class="item-main">National Scholarship.</span>
+            <span class="item-time">2019</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- <hr class="divider" /> -->
+
+    <!-- Invited Talks -->
+    <!-- <section class="section" id="talks">
+      <div class="section-head">
+        <h2>Invited Talks</h2>
+      </div>
+    
+      <ul class="list list-split">
+        <div class="row">
+          <span class="item-main"></span>
+          <span class="item-time"></span>
+        </div>
+      </ul>
+    </section> -->
+    
+    <hr class="divider" />
+    
+    <!-- Professional Services -->
+    <section class="section" id="services">
+      <div class="section-head">
+        <h2>Professional Services</h2>
+      </div>
+    
+      <ul class="list">
+        <li>Conference Reviewer: CVPR, ICCV, SIGGRAPH Asia, NeurIPS, ACM MM.</li>
+        <li>Journal Reviewer: TVCG, TIP, TCVST.</li>
+      </ul>
+    </section>
+    
+    <hr class="divider" />
+    
+    <!-- Teaching Experience -->
+    <section class="section" id="teaching">
+      <div class="section-head">
+        <h2>Teaching Experience</h2>
+      </div>
+    
+      <ul class="list list-split">
+        <li>
+          <div class="row">
+            <span class="item-main">CSCE 482:934 Capstone Design.</span>
+            <span class="item-time">Fall 2025</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="row">
+            <span class="item-main">CSCE 656:600 Computers and New Media.</span>
+            <span class="item-time">Spring 2025</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="row">
+            <span class="item-main">CSCE 634:600 Intelligent User Interface.</span>
+            <span class="item-time">Fall 2024</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="row">
+            <span class="item-main">CSCE 656:600 Computers and New Media.</span>
+            <span class="item-time">Spring 2024</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="row">
+            <span class="item-main">VIST 375:500, Foundation of Visualization.</span>
+            <span class="item-time">Fall 2023</span>
+          </div>
+        </li>
 
 
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Selected Honors & Awards</heading>
-              <p>National Scholarship. 2019, 2020</p>
-              <p>Alibaba TianChi Competition Top 1.2%. 2021</p>
-            </td>
-          </tr>
-        </tbody></table>
 
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-        </tbody></table>
+      </ul>
+          
+    </section>
+    
+    <hr class="divider" />
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-              <p>🏀Basketball. I love basketball, though the team i am in always won a second place:)</p>
-              <p>🧗Rock Climbing. V2 player now and still improving.</p>
-              <p>🏎Karting Racing. Always step on the accelerator, no brake when cornering.</p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-        </tbody></table>
+    <!-- Misc -->
+    <section class="section" id="misc">
+      <div class="section-head">
+        <h2>Misc</h2>
+      </div>
 
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Template credits: <a href="https://jonbarron.info">Jon Barron</a>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+      <ul class="list">
+        <li>🏀 Basketball. I love basketball, though the team I am in always won a second place :)</li>
+        <li>🧗 Rock Climbing. V2 player now and still improving.</li>
+        <li>🏎 Karting Racing. Always step on the accelerator, no brake when cornering.</li>
+      </ul>
+    </section>
 
-        <!-- <a href="http://www.clustrmaps.com/map/Yzmblog.github.io" title="Visit tracker for Yzmblog.github.io"><img src="//www.clustrmaps.com/map_v2.png?d=qH9G3U0IJ5vvpoVZswu0dt4bk1giFbKnnvObhM-Z9f8" /></a> -->
+    <footer class="footer">
+      <p>Template credits: <a href="https://jonbarron.info">Jon Barron</a></p>
+    </footer>
+  </main>
 
-      </td>
-    </tr>
-  </table>
-  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=qH9G3U0IJ5vvpoVZswu0dt4bk1giFbKnnvObhM-Z9f8"></script>
+  <script>
+    // Hover video effect for MonoHuman
+    function dreamfusion_start() {
+      const el = document.getElementById('dreamfusion_image');
+      if (el) el.style.opacity = "1";
+    }
+    function dreamfusion_stop() {
+      const el = document.getElementById('dreamfusion_image');
+      if (el) el.style.opacity = "0";
+    }
+    dreamfusion_stop();
+  </script>
+
+  <script id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=qH9G3U0IJ5vvpoVZswu0dt4bk1giFbKnnvObhM-Z9f8"></script>
 </body>
-
 </html>
-
