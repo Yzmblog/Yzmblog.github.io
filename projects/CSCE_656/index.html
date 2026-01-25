@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zhengming Yu — Computers and New Media</title>
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: rgba(255,255,255,0.08);
+      --card2: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --line: rgba(255,255,255,0.14);
+      --accent: #7aa7ff;
+      --shadow: 0 12px 30px rgba(0,0,0,0.35);
+      --radius: 18px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 10%, rgba(122,167,255,0.25), transparent 60%),
+        radial-gradient(700px 450px at 90% 20%, rgba(180,120,255,0.18), transparent 55%),
+        radial-gradient(800px 550px at 40% 100%, rgba(80,220,200,0.14), transparent 55%),
+        var(--bg);
+      line-height:1.55;
+    }
+    header{
+      padding: 38px 18px 12px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    header h1{
+      margin:0 0 6px 0;
+      font-size: clamp(28px, 3.5vw, 42px);
+      letter-spacing: 0.2px;
+    }
+    header p{
+      margin:0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 18px;
+      display: grid;
+      gap: 18px;
+    }
+    section{
+      background: linear-gradient(180deg, var(--card), var(--card2));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    section h2{
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      letter-spacing: 0.2px;
+    }
+    .divider{
+      height:1px;
+      background: var(--line);
+      margin: 12px 0 14px;
+    }
+    /* Section 1 layout */
+    .profile{
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .avatar{
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.06);
+      overflow: hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position: relative;
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+    }
+    .avatar .placeholder{
+      padding: 10px;
+      text-align:center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .pill{
+      display:inline-block;
+      font-size: 12px;
+      color: rgba(255,255,255,0.85);
+      background: rgba(122,167,255,0.16);
+      border: 1px solid rgba(122,167,255,0.35);
+      padding: 5px 10px;
+      border-radius: 999px;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+    /* Lists */
+    ul{ margin: 8px 0 0 18px; }
+    li{ margin: 6px 0; }
+    .note{
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    /* Responsive */
+    @media (max-width: 640px){
+      .profile{ grid-template-columns: 1fr; }
+      .avatar{ width: 100%; height: 220px; }
+    }
+    a{ color: var(--accent); }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Zhengming Yu</h1>
+  </header>
+
+  <main>
+    <!-- =========================
+         Section 1
+         ========================= -->
+    <section id="section-1">
+      <h2>Section 1 — About Me</h2>
+      <div class="divider"></div>
+
+      <div class="profile">
+        <div class="avatar" aria-label="Photo of me">
+          <img src="../../images/zhengming.jpeg" alt="Photo of Zhengming Yu"
+               onerror="this.remove(); document.getElementById('photoFallback').style.display='block';" />
+          <div id="photoFallback" class="placeholder" style="display:none;">
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 6px 0; font-size: 22px;">Zhengming Yu</h3>
+          <p style="margin:0; color: var(--muted);">
+            I’m in this class because I want to better understand how computers shape what we create,
+            how we communicate, and how media changes the way we think and interact. I’m especially
+            interested in the relationship between technical tools (software/hardware) and creative
+            expression—how interface and workflow choices influence the final message.
+          </p>
+
+          <div>
+            <span class="pill">Computers</span>
+            <span class="pill">Media</span>
+            <span class="pill">Creation + Consumption</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Section 2
+         ========================= -->
+    <section id="section-2">
+      <h2>Section 2 — Media I Frequently Use</h2>
+      <div class="divider"></div>
+
+      <p style="margin:0; color: var(--muted);">
+        Below is a nested list:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Moving images</strong> (consumer + sometimes creator)
+          <ul>
+            <li><em>Streaming TV</em>
+              <ul>
+                <li>Sci-fi / fantasy (e.g., <span title="Example">Stranger Things</span>, <span title="Example">Andor</span>)</li>
+                <li>Documentaries / educational channels</li>
+              </ul>
+            </li>
+            <li><em>YouTube / short-form video</em>
+              <ul>
+                <li>Tech tutorials, reviews, lectures</li>
+                <li>Short clips (Reels / Shorts / TikTok-style)</li>
+              </ul>
+            </li>
+            <li><em>Video calls</em>
+              <ul>
+                <li>Zoom / Google Meet for classes and meetings</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Still images</strong> (consumer + creator)
+          <ul>
+            <li><em>Social image feeds</em>
+              <ul>
+                <li>Instagram / Reddit image posts</li>
+              </ul>
+            </li>
+            <li><em>Photography</em>
+              <ul>
+                <li>Phone photos for daily life</li>
+                <li>Event photos and documentation</li>
+              </ul>
+            </li>
+            <li><em>Design / editing</em>
+              <ul>
+                <li>Canva / Figma (slides, posters, diagrams)</li>
+                <li>Light edits in Photos / Preview</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Text & communication</strong> (heavy creator)
+          <ul>
+            <li><em>Email</em>
+              <ul>
+                <li>School + work coordination</li>
+                <li>Long-form messages and attachments</li>
+              </ul>
+            </li>
+            <li><em>Messaging</em>
+              <ul>
+                <li>Slack / Discord / iMessage (quick coordination)</li>
+              </ul>
+            </li>
+            <li><em>Docs</em>
+              <ul>
+                <li>Google Docs / Overleaf (writing, collaboration)</li>
+                <li>Notes app / Markdown notes</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Music & audio</strong> (mostly consumer)
+          <ul>
+            <li><em>Streaming</em>
+              <ul>
+                <li>Focus playlists while working</li>
+                <li>Podcasts (tech, culture, news)</li>
+              </ul>
+            </li>
+            <li><em>Devices</em>
+              <ul>
+                <li>Phone + earbuds</li>
+                <li>Laptop speakers when casual listening</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Games</strong> (consumer, sometimes social)
+          <ul>
+            <li><em>PC games</em>
+              <ul>
+                <li>Strategy / co-op / casual multiplayer</li>
+              </ul>
+            </li>
+            <li><em>Mobile games</em>
+              <ul>
+                <li>Short sessions during breaks</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- =========================
+         Section 3
+         ========================= -->
+    <section id="section-3">
+      <h2>Section 3 — A Challenge I Face With Media Tools</h2>
+      <div class="divider"></div>
+
+      <p style="margin:0; color: var(--muted);">
+        One difficulty I often run into is <strong>managing files and formats across different apps/devices</strong>.
+        For example, photos and videos can look different depending on the platform (phone vs. laptop, different players,
+        or different export settings), and that makes it harder to keep the “same” content consistent when sharing or editing.
+        Another related challenge is keeping storage organized—media files are large, and it’s easy for versions to pile up.
+      </p>
+
+      <ul>
+        <li><strong>Hardware limitation:</strong> limited storage / battery life on mobile devices</li>
+        <li><strong>Software issue:</strong> inconsistent exports (resolution, color, compression)</li>
+        <li><strong>Workflow pain:</strong> too many apps; hard to keep a clean, repeatable process</li>
+      </ul>
+
+    </section>
+
+    <footer style="text-align:center; padding: 10px 0 26px; color: var(--muted);">
+      <small>© <span id="year"></span> Zhengming Yu • CSCE 656: Computers and New Media</small>
+    </footer>
+  </main>
+
+  <script>
+    // Auto-fill the year in the footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
