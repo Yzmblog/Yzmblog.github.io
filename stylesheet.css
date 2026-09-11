@@ -130,10 +130,14 @@ a:hover{ text-decoration: underline; }
 .callout{
   margin: 14px 0 18px;
   padding: 12px 14px;
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--card) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--link) 35%, var(--border));
+  background: color-mix(in srgb, var(--link) 6%, var(--bg));
   border-radius: 14px;
   color: var(--text);
+}
+
+.callout-lead{
+  color: var(--link);
 }
 
 .cta{
@@ -451,4 +455,3 @@ a:hover{ text-decoration: underline; }
     gap: 4px;
   }
 }
-
