@@ -264,6 +264,42 @@ a:hover{ text-decoration: underline; }
   white-space: nowrap;
 }
 
+.venue-badge{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 2px;
+  padding: 6px 10px;
+  border-color: color-mix(in srgb, var(--link) 28%, var(--border));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--link) 10%, var(--bg));
+  color: color-mix(in srgb, var(--link) 85%, var(--text));
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.venue-year{
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.venue-type{
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (max-width: 760px){
+  #research .card-top{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 .authors{
   margin: 8px 0 10px;
   color: var(--muted);
