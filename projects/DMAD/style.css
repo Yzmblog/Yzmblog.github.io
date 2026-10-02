@@ -48,7 +48,8 @@ h1 { font-size: clamp(28px, 3.1vw, 43px); line-height: 1.42; letter-spacing: -.7
 .hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .button { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid #3b434f; border-radius: 5px; background: #242b35; font-size: 15px; font-weight: 500; padding: 12px 20px; }
 .button:hover { background: #333c48; }
-.button-primary { background: #353e49; border-color: #454f5d; }
+.hero-actions .button { border-radius: 999px; font-weight: 600; }
+.hero-actions .button svg { flex-shrink: 0; }
 .demo-section { margin-top: 24px; }
 .demo-frame { border: 1px solid var(--line); background: #070b11; }
 .demo-frame video { width: 100%; aspect-ratio: 7 / 4; background: #0b1019; }
