@@ -293,7 +293,8 @@ a:hover{ text-decoration: underline; }
 }
 
 @media (max-width: 760px){
-  #research .card-top{
+  #research .card-top,
+  #internship .card-top{
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 8px;
